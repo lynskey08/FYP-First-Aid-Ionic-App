@@ -14,7 +14,19 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('PrepareCtrl', function($scope) {})
+.controller('PrepareCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/prepareCategories.php',
+        }).success(function(data) {
+            $scope.categories = data;
+        })
+          .error(function(data) {
+            $scope.categories = "No categories found by that name";
+        })
+    }
+})
 
 .controller('MoreCtrl', function($scope) {})
 
