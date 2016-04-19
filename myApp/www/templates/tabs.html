@@ -1,29 +1,16 @@
-<!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
-navigation history that also transitions its views in and out.
--->
-<ion-tabs class="tabs-icon-top tabs-color-active-simple">
-
-  <!-- Emergency Tab -->
-  <ion-tab title="Emergency" icon-on="ion-ios-medical" icon-off="ion-ios-medical-outline" href="#/tab/emergency">
-    <ion-nav-view name="tab-emergency"></ion-nav-view>
-  </ion-tab>
-
-  <!-- Prepare Tab -->
-  <ion-tab title="Prepare" icon-on="ion-ios-medkit" icon-off="ion-ios-medkit-outline" href="#/tab/prepare">
-    <ion-nav-view name="tab-prepare"></ion-nav-view>
-  </ion-tab>
-
-  <!-- More Tab: Login -->
-  <ion-tab title="More" icon-on="ion-ios-more" icon-off="ion-ios-more-outline" href="#/tab/more">
-    <ion-nav-view name="tab-more"></ion-nav-view>
-  </ion-tab>
-    
-  <!-- Settings Tab -->
-  <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" href="#/tab/settings">
-    <ion-nav-view name="tab-settings"></ion-nav-view>
-  </ion-tab>
-
-
-</ion-tabs>
+<ion-view title="tabs" id="page1">
+    <ion-tabs class="tabs-assertive tabs-icon-top">
+        <ion-tab title="Emergency" icon-on="ion-ios-medical" icon-off="ion-ios-medical-outline" href="#/tabs/tab-emergency">
+            <ion-nav-view name="tab1"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Prepare" icon-on="ion-ios-medkit" icon-off="ion-ios-medkit-outline" href="#/tabs/tab-prepare">
+            <ion-nav-view name="tab2"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="More" icon-on="ion-ios-more" icon-off="ion-ios-more-outline" href="#/tabs/tab-more">
+            <ion-nav-view name="tab3"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" href="#/tabs/tab-settings">
+            <ion-nav-view name="tab4"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>
