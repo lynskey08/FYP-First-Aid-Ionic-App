@@ -29,95 +29,306 @@ angular.module('app.controllers', [])
 })
    
 .controller('moreCtrl', function($scope) {
-
+	
 })
-      
-.controller('allergiesAnaphylaxisCtrl', function($scope) {
 
-})
-   
 .controller('settingsCtrl', function($scope) {
 
 })
-   
-.controller('asthmaAttackCtrl', function($scope) {
-
+      
+.controller('allergiesAnaphylaxisCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('bleedingCtrl', function($scope) {
-
+   
+.controller('asthmaAttackCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('brokenBoneCtrl', function($scope) {
-
+.controller('bleedingCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('burnsCtrl', function($scope) {
-
+.controller('brokenBoneCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('chokingCtrl', function($scope) {
-
+.controller('burnsCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('diabeticEmergencyCtrl', function($scope) {
-
+.controller('chokingCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('distressCtrl', function($scope) {
-
+.controller('diabeticEmergencyCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('headInjuryCtrl', function($scope) {
-
+.controller('distressCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('heartAttackCtrl', function($scope) {
-
+.controller('headInjuryCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('heatStrokeCtrl', function($scope) {
-
+.controller('heartAttackCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('hypothermiaCtrl', function($scope) {
-
+.controller('heatStrokeCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('meningitisCtrl', function($scope) {
-
+.controller('hypothermiaCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('harmfulSubstancesCtrl', function($scope) {
-
+.controller('meningitisCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('seizureEpilepsyCtrl', function($scope) {
-
+.controller('harmfulSubstancesCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('stingBitesCtrl', function($scope) {
-
+.controller('seizureEpilepsyCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('strainsAndSprainsCtrl', function($scope) {
-
+.controller('stingBitesCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('strokeCtrl', function($scope) {
-
+.controller('strainsAndSprainsCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('shockCtrl', function($scope) {
-
+.controller('strokeCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('unconsciousBreathingCtrl', function($scope) {
-
+.controller('shockCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('unconsciousNotBreathingCtrl', function($scope) {
-
+.controller('unconsciousBreathingCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
+})
+   
+.controller('unconsciousNotBreathingCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/emergencyMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
 .controller('chemicalEmergencyCtrl', function($scope) {

@@ -1,3 +1,15 @@
 <ion-view title="Allergies/Anaphylaxis" id="page5">
-    <ion-content padding="true" class="has-header"></ion-content>
+    <ion-content class="padding" data-ng-init="newTask()">
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[0].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[1].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[2].description}}
+		</p>
+	</ion-content>
 </ion-view>
