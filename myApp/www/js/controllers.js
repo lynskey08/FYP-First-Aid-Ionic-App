@@ -331,12 +331,32 @@ angular.module('app.controllers', [])
     }
 })
    
-.controller('chemicalEmergencyCtrl', function($scope) {
-
+.controller('chemicalEmergencyCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/prepareMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
-.controller('emergencyKitCtrl', function($scope) {
-
+.controller('emergencyKitCtrl', function($scope, $http) {
+	$scope.newTask = function() {
+        $http({
+            method: 'GET',
+            url: 'http://lynskey.cloudapp.net/prepareMessage.php',
+        }).success(function(data) {
+            $scope.description = data;
+        })
+          .error(function(data) {
+            $scope.description = "No categories found by that name";
+        })
+    }
 })
    
 .controller('everydayEmergencyCtrl', function($scope) {

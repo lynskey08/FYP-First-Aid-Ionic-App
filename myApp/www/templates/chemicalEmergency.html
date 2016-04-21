@@ -1,3 +1,55 @@
 <ion-view title="Chemical Emergency" id="page27">
-    <ion-content padding="true" class="has-header"></ion-content>
+    <ion-content class="padding" data-ng-init="newTask()">
+		
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[0].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[1].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[2].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[3].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[4].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[5].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[6].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[7].description}}
+		</p>
+		<br />
+		<p style="font-size:120%; color:#5c5c3d">
+			{{description[8].description}}
+		</p>
+		
+		
+		<!--
+			<ion-list show-delete="data.showDelete" on-delete="onItemDelete(item)" option-buttons="itemButtons">
+			<ion-item ng-repeat="item in items" 
+					  item="item" 
+					  >
+			   <label class="checkbox">
+				<input type="checkbox" ng-click="clickItem(item); $event.stopPropagation();" ng-model="item.checked">
+			 </label>
+					{{description[0].description}}
+			</ion-item>
+        </ion-list>
+		-->
+		
+	</ion-content>
 </ion-view>
