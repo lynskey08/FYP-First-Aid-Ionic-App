@@ -28,13 +28,41 @@ angular.module('app.controllers', [])
     }
 })
    
-.controller('moreCtrl', function($scope) {
+.controller('moreCtrl', function($scope, $http, $state) {
+	$scope.details= {};
+	
+	$scope.login= function(){
+		if($scope.details.username == undefined || $scope.details.password == undefined){
+			$scope.response = "Username and password are required";
+		}//if ends here
+		else {
+			$http({
+				method : 'GET',
+				url : 'http://lynskey.cloudapp.net/login.php',
+				params : {
+					user : $scope.details.username,
+					pass : $scope.details.password
+				}
+			}).success(function(data){
+				if(data == 'Username and Password didnt match'){
+					$scope.response="Username and Password didnt match"
+				}
+				else{
+					$state.go('tabs.emergency');
+				}
+			}).error (function(data){
+				$scope.response = "Login details were incorrect";
+			})	
+		}
+		
+	}
+	
 	
 })
+		/*
+		.controller('settingsCtrl', function($scope) {
 
-.controller('settingsCtrl', function($scope) {
-
-})
+		})*/
       
 .controller('allergiesAnaphylaxisCtrl', function($scope, $http) {
 	$scope.newTask = function() {
@@ -343,6 +371,16 @@ angular.module('app.controllers', [])
             $scope.description = "No categories found by that name";
         })
     }
+	
+	$scope.CONFIG = localStorage.getItem('CONFIG');
+		if (!$scope.CONFIG) {
+		  $scope.CONFIG = true;
+		}
+
+		$scope.save = function(checked) {
+		  $scope.CONGIF = checked;
+		  localStorage.setItem('CONFIG', $scope.CONFIG);
+		}
 })
    
 .controller('emergencyKitCtrl', function($scope, $http) {

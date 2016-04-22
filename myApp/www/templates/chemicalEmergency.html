@@ -7,7 +7,9 @@
 		
 		<h5 class="title" style="color:#1f1f14">Before</h5>
 		<p style="font-size:120%; color:#5c5c3d">
-			<input type="checkbox">
+			<input type="checkbox" ng-model="checked"
+			   ng-change="save(checked)"
+			   ng-init="checked = CONFIG">
 			{{description[1].description}}
 		</p>
 		<br />
