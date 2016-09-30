@@ -4,6 +4,8 @@
 ##Student Name: Gareth Lynskey
 ##Supervisor: Martin Hynes
 
+#NOTE: The information in this application is no longer available as my Microsoft Azure Server's ccredit has run out.
+
 ####Introduction
 For my software project I wanted to develop an Ionic mobile application for first aid. The main concept of this mobile application is to help provide information to people on how to act in the event of a crisis, how to prepare for an emergency or just simply to learn more about first aid. The information displayed would be stored on a database. Users would be prompted to register an account but do not have to in order to view the information side of the application. Users that would register an account would have to add in some personal and contact information about themselves and if they had any medical or first aid training, and then those users would be marked with training skills. Users who had no medical or first aid training who were in the event of an emergency would be able to activate a beacon which would find the user closest to them with medical training and a message would be sent to the user with medical training requesting their contact information which they could accept or refuse, in order for the user in need to get in contact with them for help.
 
