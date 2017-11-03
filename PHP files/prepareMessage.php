@@ -5,7 +5,7 @@
 	$host = "localhost";
 	$host1 = "lynskey.cloudapp.net";
 	$user = "lynskey";
-	$password = "ZqsbUw$8";
+	$password = "";
 	$database = "prepare";
 	
 	
