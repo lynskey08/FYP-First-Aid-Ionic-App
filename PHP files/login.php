@@ -5,7 +5,7 @@
 	$host = "localhost";
 	$host1 = "lynskey.cloudapp.net";
 	$username = "lynskey";
-	$password = "ZqsbUw$8";
+	$password = "";
 	$database = "prepare";
 
 	$dbhandle = mysqli_connect($host1 ,$username ,$password, $database) or die ("username password is wrong");
